@@ -1,0 +1,11 @@
+D:\APIS\RinconDL\bin\Debug\netcoreapp3.1\Rincon.DL.deps.json
+D:\APIS\RinconDL\bin\Debug\netcoreapp3.1\Rincon.DL.runtimeconfig.json
+D:\APIS\RinconDL\bin\Debug\netcoreapp3.1\Rincon.DL.runtimeconfig.dev.json
+D:\APIS\RinconDL\bin\Debug\netcoreapp3.1\Rincon.DL.dll
+D:\APIS\RinconDL\bin\Debug\netcoreapp3.1\Rincon.DL.pdb
+D:\APIS\RinconDL\obj\Debug\netcoreapp3.1\Rincon.DL.AssemblyInfoInputs.cache
+D:\APIS\RinconDL\obj\Debug\netcoreapp3.1\Rincon.DL.AssemblyInfo.cs
+D:\APIS\RinconDL\obj\Debug\netcoreapp3.1\Rincon.DL.csproj.CoreCompileInputs.cache
+D:\APIS\RinconDL\obj\Debug\netcoreapp3.1\Rincon.DL.dll
+D:\APIS\RinconDL\obj\Debug\netcoreapp3.1\Rincon.DL.pdb
+D:\APIS\RinconDL\obj\Debug\netcoreapp3.1\Rincon.DL.genruntimeconfig.cache

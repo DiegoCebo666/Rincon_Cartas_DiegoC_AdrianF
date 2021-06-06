@@ -1,0 +1,12 @@
+D:\APIS\RinconBL\bin\Debug\netcoreapp3.1\Rincon.BL.deps.json
+D:\APIS\RinconBL\bin\Debug\netcoreapp3.1\Rincon.BL.dll
+D:\APIS\RinconBL\bin\Debug\netcoreapp3.1\Rincon.BL.pdb
+D:\APIS\RinconBL\bin\Debug\netcoreapp3.1\Rincon.DL.dll
+D:\APIS\RinconBL\bin\Debug\netcoreapp3.1\Rincon.DL.pdb
+D:\APIS\RinconBL\obj\Debug\netcoreapp3.1\Rincon.BL.csprojAssemblyReference.cache
+D:\APIS\RinconBL\obj\Debug\netcoreapp3.1\Rincon.BL.AssemblyInfoInputs.cache
+D:\APIS\RinconBL\obj\Debug\netcoreapp3.1\Rincon.BL.AssemblyInfo.cs
+D:\APIS\RinconBL\obj\Debug\netcoreapp3.1\Rincon.BL.csproj.CoreCompileInputs.cache
+D:\APIS\RinconBL\obj\Debug\netcoreapp3.1\Rincon.BL.csproj.CopyComplete
+D:\APIS\RinconBL\obj\Debug\netcoreapp3.1\Rincon.BL.dll
+D:\APIS\RinconBL\obj\Debug\netcoreapp3.1\Rincon.BL.pdb
