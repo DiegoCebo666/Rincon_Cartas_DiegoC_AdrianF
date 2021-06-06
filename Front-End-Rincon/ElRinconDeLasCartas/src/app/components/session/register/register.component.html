@@ -1,0 +1,29 @@
+<div class="content" role="main" style="padding-bottom: 7%;">
+    <div class="input-group mb-3" style="width: 40%;">
+        <div class="input-group-prepend" style="padding-right: 5px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
+            style="width: 20px; padding-top: 8px;" />
+        </div>
+        <input (keyup)="getUser($event.target.value)"  type="text" class="form-control" placeholder="Username" aria-label="Username">
+      </div>
+      <div class="input-group mb-3" style="width: 40%;">
+        <div class="input-group-prepend" style="padding-right: 5px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/At_sign.svg"
+            style="width: 20px; padding-top: 8px;" />
+        </div>
+        <input (keyup)="getEmail($event.target.value)"  type="text" class="form-control" placeholder="Email" aria-label="Username">
+      </div>
+      <div class="input-group mb-3"  style="width: 40%;">
+        <div class="input-group-icon" style="padding-right: 5px;">
+          <img src="https://static.thenounproject.com/png/2440737-200.png" style="width: 20px; padding-top: 8px;" />
+        </div>
+        <input (keyup)="getPass($event.target.value)" id="password2"  type="text" class="form-control" placeholder="Password" aria-label="Username">
+      </div>
+      <div class="input-group mb-3"  style="width: 40%;">
+        <div class="input-group-icon" style="padding-right: 5px;">
+          <img src="https://static.thenounproject.com/png/2440737-200.png" style="width: 20px; padding-top: 8px;" />
+        </div>
+        <input (keyup)="getPass2($event.target.value)" id="password2"  type="text" class="form-control" placeholder="Repeat Password" aria-label="Username">
+      </div>
+    <button type="button" class="btn btn-outline" (click)="validarDatos()">Registrarse</button>
+</div>

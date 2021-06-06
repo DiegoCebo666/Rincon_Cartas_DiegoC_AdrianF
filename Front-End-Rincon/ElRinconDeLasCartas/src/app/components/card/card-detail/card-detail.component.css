@@ -1,0 +1,66 @@
+.container {
+
+    margin: 32px auto 32px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+#text{}
+
+h1{
+    /*color: #125699;*/
+    
+}
+
+#dataConteiner{
+    /*background-color: aqua;*/
+}
+
+#titulares{
+    font-size: 20px;
+}
+
+#name{ 
+    display: flex;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+thead{
+    background-color: #125699;
+    color: white ;
+}
+
+#head{
+    background-color: #125699;
+    color: white ;
+}
+
+
+.btn-outline-primary,
+.btn-outline-primary:active,
+.btn-outline-primary:visited,
+.btn-outline-primary:focus {
+    color: #125699;
+    border-color: #125699;
+}
+
+.btn-outline-primary:hover{
+    color: white;
+    background-color: #125699;
+}
+
+.btn-outline,
+.btn-outline:active,
+.btn-outline:visited,
+.btn-outline:focus {
+    color: white;
+    border-color: #125699;
+    background-color: #125699;
+}
+
+.btn-outline:hover{
+    background-color: #2c74bb;
+}

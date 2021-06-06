@@ -1,0 +1,29 @@
+.content {
+    display: flex;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.btn-outline-primary,
+.btn-outline-primary:active,
+.btn-outline-primary:visited,
+.btn-outline-primary:focus {
+    color: #125699;
+    border-color: #125699;
+}
+
+.btn-outline-primary:hover{
+    color: white;
+    background-color: #125699;
+}
+
+#Games{
+    width: 100%;
+  }
+
+img{
+    height: 150px;
+}

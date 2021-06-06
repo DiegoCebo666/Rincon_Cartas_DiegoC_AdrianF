@@ -1,0 +1,28 @@
+#titular{
+    text-align: center ;
+    font-size: 30px;
+    color: #125699;
+}
+
+.card {
+    position: relative;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 0px;
+    min-height: 360px;
+    height: 360px;
+    max-height: 360px;
+}
+.btn-outline,
+.btn-outline:active,
+.btn-outline:visited,
+.btn-outline:focus {
+    color: white;
+    border-color: #125699;
+    background-color: #125699;  
+}
+
+.btn-outline:hover{
+    background-color: #2c74bb;
+}

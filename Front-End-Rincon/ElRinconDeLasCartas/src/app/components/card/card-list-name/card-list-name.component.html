@@ -1,0 +1,25 @@
+<div class="content " role="main" >
+    <div id="Games" class="row" >
+        <div class="col-3" *ngFor="let cardList of cardService.listCardByName">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" [src]="cardList.img" routerLink='/CardDetail/{{cardList.cartaId}}'>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div style="display: flex;">
+                            
+                                <p  style="text-align: center;">
+                                    {{cardList.cartaName}}
+                                </p>
+                                <div style="padding-left: 3px;">
+                                    <a type="button" class="btn btn-outline card-text" routerLink='/CardDetail/{{cardList.cartaId}}'>Ver</a>
+                                </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

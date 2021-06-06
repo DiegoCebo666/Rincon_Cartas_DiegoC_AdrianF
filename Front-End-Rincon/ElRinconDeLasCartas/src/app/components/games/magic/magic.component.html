@@ -1,0 +1,128 @@
+<div>
+    <div id="carrusel">
+      <ngb-carousel
+          [showNavigationArrows]="true" 
+          [showNavigationIndicators]="true"
+          interval="10000"
+          [keyboard]="true"
+          [pauseOnHover]="true"
+          [wrap]="true"
+          [activeId]="'sliderThree'">
+  
+      <ng-template ngbSlide id="sliderOne">
+          <div class="picsum-img-wrapper">
+              <img src="https://as.com/meristation/imagenes/2020/09/04/avances/1599203646_847773_1599203889_noticia_normal.jpg" style="height: 400px; width: 1300px;" alt="Carousel One">
+          </div>
+          <div class="carousel-caption" >
+              <h3><b>Magic The Gathering Arena</b></h3>
+              <p style="background-color: #125699;">Bienvenido al juego de Magic The Gathering</p>
+          </div>
+      </ng-template>
+      <ng-template ngbSlide id="sliderTwo">
+          <div class="picsum-img-wrapper">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxuzBS-P14HVVkHw67IgNicpcUgEOKYq12cu31lag_V-M3IOQQaRfo28vIsWDcP8Ousd4&usqp=CAU" style="height: 400px; width: 1300px;" alt="Carousel Two">
+          </div>
+          <div class="carousel-caption" >
+              <h3><b>Magic Mana Strike</b></h3>
+              <p style="background-color: #125699;">Bienvenido al juego de Magic The Gathering</p>
+          </div>
+      </ng-template>
+      <ng-template ngbSlide id="sliderThree">
+          <div class="picsum-img-wrapper">
+              <img src="https://www.zonammorpg.com/wp-content/uploads/2019/12/magic-legends-1620x800.jpg" style="height: 400px; width: 1300px;" alt="Carousel Three">
+          </div>
+          <div class="carousel-caption">
+              <h3><b>Magic Legends</b></h3>
+              <p style="background-color: #125699;">Bienvenido al juego de Magic The Gathering</p>
+          </div>
+      </ng-template>
+  
+  </ngb-carousel>
+    </div>
+    <div class="row">
+      <div class="col" id="separador">
+      </div>
+      <div class="col-10" style="align-items: center; height: auto;">
+        <div class="row">
+          <div class="col">
+            <p id="titular"><b>Mas recientes</b></p>
+            <div class="row card-columns">
+              <div class="col-4 " *ngFor="let top3Recent of cardService.listMasRecientesTop3">
+                <div class="card text-center">
+                  <img class="card-img-top" [src]="top3Recent.Img" alt="Card image cap">
+                  <div class="card-body">
+                    <a>
+                      <p style="text-align: center; font-size: 15px" class="card-title"><b>{{top3Recent.CartaName}}</b>
+                      </p>
+                    </a>
+                    <a type="button" class="btn btn-outline card-text"
+                      routerLink='/CardDetail/{{top3Recent.CartaId}}'>Ver</a>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+            <div style="padding-top: 15px;">
+              <table class="table table-borderless table-striped " style="text-align: center;">
+                <tbody>
+                  <tr *ngFor="let cardList of cardService.listMasRecientes4_8">
+                    <td>{{cardList.CartaId}}</td>
+                    <td>{{cardList.CartaName}}</td>
+                    <td><a type="button" class="btn btn-outline card-text"
+                        routerLink='/CardDetail/{{cardList.CartaId}}'>Ver</a></td>
+                  </tr>
+  
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col">
+            <p id="titular"><b>Gangas Del Dia!</b></p>
+            <div class="row card-columns">
+              <div class="col-4 " *ngFor="let cardList of cardService.listGangasTop3">
+                <div class="card text-center">
+                  <img class="card-img-top"
+                  [src]="cardList.Img"
+                    alt="Card image cap">
+                    <div class="card-body">
+                      <a>
+                        <p style="text-align: center; font-size: 15px" class="card-title"><b>{{cardList.CartaName}}</b>
+                        </p>
+                      </a>
+                      <a type="button" class="btn btn-outline card-text"
+                        routerLink='/CardDetail/{{cardList.CartaId}}'>Ver</a>
+                    </div>
+                </div>
+              </div>
+              
+            </div>
+            <div style="padding-top: 15px;">
+              <table class="table table-borderless table-striped " style="text-align: center;">
+                <tbody>
+                  <tr *ngFor="let cardList of cardService.listGangas4_8">
+                    <td>{{cardList.CartaId}}</td>
+                    <td>{{cardList.CartaName}}</td>
+                    <td><a type="button" class="btn btn-outline card-text"
+                        routerLink='/CardDetail/{{cardList.CartaId}}'>Ver</a></td>
+                  </tr>
+  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" id="separador">
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col" id="separador">
+      </div>
+      <div class="col-8" style="align-items: center; height: auto;">
+  
+      </div>
+      <div class="col" id="separador">
+      </div>
+    </div>
+  </div>

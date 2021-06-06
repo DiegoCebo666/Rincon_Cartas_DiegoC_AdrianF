@@ -1,0 +1,7 @@
+{
+    "/Cartas/*":{
+        "target":"https://localhost:44377",
+        "secure": true,
+        "logLevel": "debug"
+    }
+}

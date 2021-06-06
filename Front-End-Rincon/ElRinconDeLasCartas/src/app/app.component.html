@@ -1,0 +1,109 @@
+<div class="toolbar">
+  <img width="40" routerLink='mainPage'
+    src="https://cdn.discordapp.com/attachments/844234069751103498/844234577382998016/Logo1Icono-removebg-preview.png" />
+  <img width="300"  (click)="addUser()" style="padding-top: 1px;"
+    src="https://cdn.discordapp.com/attachments/844234069751103498/844234536090599424/Logo2Nombre-removebg-preview.png" />
+
+  <div id="userRL" *ngIf="loged == false">
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
+          style="width: 20px; padding-top: 8px;" />
+      </div>
+      <input (keyup)="getUser($event.target.value)" name="username2" #username2 type="text" class="form-control" placeholder="Username" aria-label="Username">
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-icon">
+        <img src="https://static.thenounproject.com/png/2440737-200.png" style="width: 20px; padding-top: 8px;" />
+      </div>
+      <input (keyup)="getPass($event.target.value)" id="password2" name="password" #password2 type="password" class="form-control" placeholder="Password" aria-label="Username">
+    </div>
+  </div>
+  <div style="padding-left: 10px; padding-top: 1px;"  *ngIf="loged == false">
+    <button type="button" class="btn btn-outline-primary" (click)="login()">Iniciar Sesion</button>
+  </div>
+  <div style="padding-left: 10px; padding-top: 1px;"  *ngIf="loged == false">
+    <button type="button" class="btn btn-outline" routerLink='Registerpage'>Registrarse</button>
+  </div>
+
+  <div style="padding-left: 10px; text-align: center;"  *ngIf="loged == true" class="text">
+    <p style="color: #125699; font-size: 25px;">Bienvenido <b>{{userName}}</b></p>
+  </div>
+
+  <div style="padding-left: 10px;"  *ngIf="loged == true">
+    <button type="button" class="btn btn-outline" (click)="desconectarse()">Desconectarse</button>
+  </div>
+
+  <div style="padding-left: 10px;"  *ngIf="loged == true">
+    <div type="button" class="btn btn-outline" (click)="irAlCarrito()">
+      Mi Carrito
+      <img style="width: 20px;" src="https://cdn.discordapp.com/attachments/844234069751103498/849777279332515870/add-to-cart-icon-vector-removebg-preview1.png"/>
+    </div>
+  </div>
+</div>
+
+
+<div class="browser justify-content-center">
+  <select (change)="getAndChangeIdJuego($event)" class="form-control" id="gameSelector" style="width: 15%; background-color: white; color: #125699;">
+    <option>Seleccion Juego</option>
+    <option value="1">Pokemon</option>
+    <option value="2">Yu-Gi-Oh</option>
+    <option value="3">Magic</option>
+    <option value="4">Dragon Ball</option>
+  </select>
+  <div class="input-group rounded" style="width: 50% ; padding-left: 10px;">
+    
+    <input type="search" class="form-control rounded" placeholder="Buscar en El Rincon De Las Cartas..."
+    name="cardName" #cardName aria-label="Search" aria-describedby="search-addon" />
+    <span class="input-group-text border-0" id="search-addon" (click)="changeUrl(cardName.value)">
+      <img src="https://image.flaticon.com/icons/png/512/64/64673.png" style="width: 20px;" />
+    </span>
+  </div>
+
+</div>
+
+
+<router-outlet></router-outlet>
+
+<footer>
+  <div style="padding-top: 8px; display: flex;">
+    <p id="names"><b>Condiciones legales</b></p>
+    <p id="names"><b>Política de privacidad</b></p>
+    <p id="names"><b>Ayuda</b></p>
+    <p id="names"><b>Contactanos</b></p>
+  </div>
+  <div id="redes">
+    <div class="card-container">
+      <a class="circle-link" title="Animations" href="http://localhost:4200/mainPage" target="_blank" rel="noopener">
+        <svg id="Group_20" data-name="Group 20" xmlns="http://www.w3.org/2000/svg" width="21.813" height="23.453"
+          viewBox="0 0 21.813 23.453">
+          <image
+            href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+            height="22" width="22" />
+        </svg>
+      </a>
+    </div>
+    <div class="card-container">
+      <a class="circle-link" title="Animations" href="https://angular.io/guide/animations" target="_blank"
+        rel="noopener">
+        <svg id="Group_20" data-name="Group 20" xmlns="http://www.w3.org/2000/svg" width="21.813" height="23.453"
+          viewBox="0 0 21.813 23.453">
+          <image
+            href="https://cdn.discordapp.com/attachments/844234069751103498/848605082139754526/discord-logo-png-7617.png"
+            height="22" width="22" />
+        </svg>
+      </a>
+    </div>
+    <div class="card-container">
+      <a class="circle-link" title="Animations" href="https://angular.io/guide/animations" target="_blank"
+        rel="noopener">
+        <svg id="Group_20" data-name="Group 20" xmlns="http://www.w3.org/2000/svg" width="21.813" height="23.453"
+          viewBox="0 0 21.813 23.453">
+          <image href="https://png.pngtree.com/element_our/md/20180506/md_5aeee4500f15d.jpg" height="22" width="22" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
